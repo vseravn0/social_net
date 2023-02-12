@@ -14,6 +14,9 @@
     "moduleResolution": "node",
     // абсолютный импорт
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // esModuleInterop позволяет работать с пакетами, которые использует
     // common.js как с обычными пакетами с помощью import (require() module.exports = common.js
     "esModuleInterop": true,
