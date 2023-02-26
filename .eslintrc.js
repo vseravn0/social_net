@@ -59,7 +59,7 @@ module.exports = {
         // ругается если забыли локализацию
         'i18next/no-literal-string': ['error', { markupOnly: true }],
         // игнорит максимальную длинну комов в комментах
-        'max-len': ['error', { ignoreComments: true }],
+        'max-len': ['error', { ignoreComments: true, code: 100 }],
     },
     globals: {
         __IS_DEV__: true,
