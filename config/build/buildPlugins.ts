@@ -20,6 +20,6 @@ export function buildPlugins({ paths }:BuildOptions): webpack.WebpackPluginInsta
             __IS_DEV__: JSON.stringify(true),
         }),
         // TODO will add isDev condition
-        new ReactRefreshPlugin(),
+        new ReactRefreshPlugin({ overlay: false }),
     ];
 }
