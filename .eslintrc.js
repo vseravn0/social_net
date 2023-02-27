@@ -57,11 +57,25 @@ module.exports = {
         // запрещает андерскор
         'no-underscore-dangle': 'off',
         // ругается если забыли локализацию
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'i18next/no-literal-string': [
+            'error', {
+                markupOnly: true,
+                ignoreAttribute: ['data-testid'],
+            },
+        ],
         // игнорит максимальную длинну комов в комментах
         'max-len': ['error', { ignoreComments: true, code: 100 }],
     },
     globals: {
         __IS_DEV__: true,
     },
+    // переопредялет правила для определнных тиипов
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };
