@@ -5,8 +5,8 @@ import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 
-export function buildPlugins({ paths }:BuildOptions): webpack.WebpackPluginInstance[] {
-    return [
+export function buildPlugins({ paths, isDev }:BuildOptions): webpack.WebpackPluginInstance[] {
+    const plugins = [
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin(
             {
@@ -20,8 +20,12 @@ export function buildPlugins({ paths }:BuildOptions): webpack.WebpackPluginInsta
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(true),
         }),
-        // TODO will add isDev condition
-        new ReactRefreshPlugin({ overlay: false }),
-        new BundleAnalyzerPlugin({ openAnalyzer: false }),
     ];
+    if (isDev) {
+        plugins.push(
+            new ReactRefreshPlugin({ overlay: false }),
+            new BundleAnalyzerPlugin({ openAnalyzer: false }),
+        );
+    }
+    return plugins;
 }
