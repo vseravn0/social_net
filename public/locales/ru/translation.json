@@ -1,4 +1,11 @@
 {
   "lang": "Русский",
-  "Page not found": "Страница не найдена"
+  "Page not found": "Страница не найдена",
+  "error": "Ошибка",
+  "toggle": "Переключить",
+  "something": "Что-то пошло не так",
+  "update": "Обновить",
+  "aboutPage": "О странице",
+  "mainPage": "Главная",
+  "shortLang": "Ру"
 }
