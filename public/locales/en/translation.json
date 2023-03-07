@@ -8,5 +8,7 @@
   "aboutPage": "About",
   "mainPage": "Main",
   "shortLang": "En",
-  "join": "Join"
+  "join": "Join",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }

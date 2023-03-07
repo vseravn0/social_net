@@ -21,6 +21,9 @@ export default {
     coveragePathIgnorePatterns: [
         '/node_modules/',
     ],
+    globals: {
+        __IS_DEV__: true,
+    },
     // An array of file extensions your modules use
     moduleFileExtensions: [
         'js',

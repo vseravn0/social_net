@@ -8,5 +8,7 @@
   "aboutPage": "О странице",
   "mainPage": "Главная",
   "shortLang": "Ру",
-  "join": "Войти"
+  "join": "Войти",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
