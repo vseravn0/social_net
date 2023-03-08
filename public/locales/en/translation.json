@@ -12,6 +12,8 @@
   "increment": "Increment",
   "decrement": "Decrement",
   "log in": "Log in",
+  "log out": "Log out",
   "login": "Login",
-  "password": "Password"
+  "password": "Password",
+  "authorization": "Authorization"
 }
