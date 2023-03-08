@@ -10,5 +10,8 @@
   "shortLang": "Ру",
   "join": "Войти",
   "increment": "Increment",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "log in": "Войти",
+  "login": "Login",
+  "password": "Password"
 }

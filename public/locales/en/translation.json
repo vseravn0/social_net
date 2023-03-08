@@ -10,5 +10,8 @@
   "shortLang": "En",
   "join": "Join",
   "increment": "Increment",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "log in": "Log in",
+  "login": "Login",
+  "password": "Password"
 }
